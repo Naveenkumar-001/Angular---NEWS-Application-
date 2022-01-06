@@ -1,0 +1,14 @@
+<div class="container-fluid mt-3">
+    <h4> General NEWS </h4> 
+    <marquee behavior="" direction="right" class="alert alert-danger">This news is fetched from Web API</marquee>
+    <div class="row mt-3">
+        <div class="col-lg-3 mt-3 mb-3" *ngFor="let item of data">
+            <div class="box">
+            <img src="{{item.urlToImage}}" width="100%"> <br> <br>
+            <h5 class="mt-3 mb-3">{{item.title}}</h5>
+       
+            <a href="{{item.url}}" target="_blank" class="btn btn-dark btn-sm">Read More</a>
+        </div>
+        </div>
+    </div>
+</div>
